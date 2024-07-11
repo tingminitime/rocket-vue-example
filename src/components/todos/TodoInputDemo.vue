@@ -1,7 +1,7 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>TodoList</div>
+  <div></div>
 </template>
 
 <style scope></style>

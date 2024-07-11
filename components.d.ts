@@ -7,9 +7,13 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    Child: typeof import('./src/components/drill-message/Child.vue')['default']
+    DemoComponent: typeof import('./src/components/demo/DemoComponent.vue')['default']
+    GrandParent: typeof import('./src/components/drill-message/GrandParent.vue')['default']
     Link: typeof import('./src/components/Link.vue')['default']
     MemberCard: typeof import('./src/components/member/MemberCard.vue')['default']
     PageTitle: typeof import('./src/components/PageTitle.vue')['default']
+    Parent: typeof import('./src/components/drill-message/Parent.vue')['default']
     PostCard: typeof import('./src/components/post/PostCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
@@ -17,7 +21,11 @@ declare module 'vue' {
     TheHeader: typeof import('./src/components/TheHeader.vue')['default']
     ThemeSwitcher: typeof import('./src/components/ThemeSwitcher.vue')['default']
     TitleInput: typeof import('./src/components/title/TitleInput.vue')['default']
+    TodoInput: typeof import('./src/components/todos/TodoInput.vue')['default']
+    TodoInputDemo: typeof import('./src/components/todos/TodoInputDemo.vue')['default']
     TodoItem: typeof import('./src/components/todos/TodoItem.vue')['default']
+    TodoItemDemo: typeof import('./src/components/todos/TodoItemDemo.vue')['default']
     TodoList: typeof import('./src/components/todos/TodoList.vue')['default']
+    TodoListDemo: typeof import('./src/components/todos/TodoListDemo.vue')['default']
   }
 }

@@ -1,8 +1,9 @@
+<!-- TODO: 定義 Props 將資料傳遞進來 -->
 <script setup lang="ts">
 </script>
 
 <template>
-  <div class="mx-auto max-w-xl rounded-lg bg-white p-8 drop-shadow-xl dark:bg-gray-100">
+  <div class="mx-auto max-w-xl rounded-lg bg-white p-8 drop-shadow-xl dark:bg-gray-900">
     <!-- Author -->
     <div class="mb-4 flex items-center justify-between">
       <div class="flex items-center gap-x-2">

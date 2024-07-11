@@ -1,7 +1,8 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div>TodoItem</div>
+  <div>子元件</div>
+  <input type="text">
 </template>
 
 <style scope></style>

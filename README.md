@@ -25,7 +25,7 @@ This Vue 3 template is inspired by [antfu/vitesse-lite](https://github.com/antfu
 ## Prerequistes
 
 - Node.js >= v20.0.0
-- pnpm >= v8.0.0
+- pnpm >= v9.3.0
 - [VS Code](https://code.visualstudio.com/)
 
 ### VS Code Extensions

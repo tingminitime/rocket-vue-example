@@ -15,7 +15,7 @@
 
     <!-- User profile -->
     <div class="flex items-center justify-end">
-      User
+      Profile
     </div>
   </header>
 </template>

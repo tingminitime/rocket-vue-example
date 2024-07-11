@@ -16,14 +16,10 @@ export const useCartStore = defineStore('cart', () => {
   })
 
   function addProduct(product: Product) {
-    console.log('[addProduct]', product.id)
     cart.value.push(product)
-
-    throw new Error('test')
   }
 
   function removeProduct(productId: Product['id']) {
-    console.log('[removeProduct]', productId)
     cart.value = cart.value.filter(p => p.id !== productId)
   }
 

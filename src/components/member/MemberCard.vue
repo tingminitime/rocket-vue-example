@@ -1,13 +1,5 @@
+<!-- TODO: 定義 Props 將資料傳遞進來 -->
 <script setup lang="ts">
-// import type { Member } from '~/types/api/member'
-
-// defineProps({
-//   memberData: Object,
-// })
-
-// defineProps<{
-//   memberData: Member | null
-// }>()
 </script>
 
 <template>

@@ -15,6 +15,7 @@ export const routes = [
     component: () => import('~/pages/demo/index.vue'),
     meta: {
       title: 'Demo Page',
+      description: 'Demo',
     },
   },
   {
@@ -23,6 +24,7 @@ export const routes = [
     component: () => import('~/pages/posts/index.vue'),
     meta: {
       title: 'Posts Page',
+      description: 'Props',
     },
   },
   {
@@ -31,6 +33,7 @@ export const routes = [
     component: () => import('~/pages/member/index.vue'),
     meta: {
       title: 'Member Page',
+      description: 'Fetch & Props',
     },
   },
   {
@@ -39,6 +42,7 @@ export const routes = [
     component: () => import('~/pages/mouse/index.vue'),
     meta: {
       title: 'Mouse Page',
+      description: 'Composables',
     },
   },
   {
@@ -47,6 +51,16 @@ export const routes = [
     component: () => import('~/pages/title/index.vue'),
     meta: {
       title: 'Title Page',
+      description: 'Composables & VueUse',
+    },
+  },
+  {
+    path: '/drill-message',
+    name: 'drill-message',
+    component: () => import('~/pages/drill-message/index.vue'),
+    meta: {
+      title: 'Drill Message Page',
+      description: 'Component v-model & provide/inject',
     },
   },
   {
@@ -55,6 +69,7 @@ export const routes = [
     component: () => import('~/pages/todos/index.vue'),
     meta: {
       title: 'Todos Page',
+      description: 'Store',
     },
   },
   {
@@ -63,6 +78,7 @@ export const routes = [
     component: () => import('~/pages/cart/index.vue'),
     meta: {
       title: 'Cart Page',
+      description: 'Store',
     },
   },
   {
