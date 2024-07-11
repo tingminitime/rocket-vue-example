@@ -14,7 +14,9 @@ declare module 'vue' {
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
+    TheHeader: typeof import('./src/components/TheHeader.vue')['default']
     ThemeSwitcher: typeof import('./src/components/ThemeSwitcher.vue')['default']
+    TitleInput: typeof import('./src/components/title/TitleInput.vue')['default']
     TodoItem: typeof import('./src/components/todos/TodoItem.vue')['default']
     TodoList: typeof import('./src/components/todos/TodoList.vue')['default']
   }

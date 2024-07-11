@@ -18,11 +18,19 @@ export const routes = [
     },
   },
   {
-    path: '/cart',
-    name: 'cart',
-    component: () => import('~/pages/cart/index.vue'),
+    path: '/posts',
+    name: 'posts',
+    component: () => import('~/pages/posts/index.vue'),
     meta: {
-      title: 'Cart Page',
+      title: 'Posts Page',
+    },
+  },
+  {
+    path: '/member',
+    name: 'member',
+    component: () => import('~/pages/member/index.vue'),
+    meta: {
+      title: 'Member Page',
     },
   },
   {
@@ -42,14 +50,6 @@ export const routes = [
     },
   },
   {
-    path: '/posts',
-    name: 'posts',
-    component: () => import('~/pages/posts/index.vue'),
-    meta: {
-      title: 'Posts Page',
-    },
-  },
-  {
     path: '/todos',
     name: 'todos',
     component: () => import('~/pages/todos/index.vue'),
@@ -58,11 +58,11 @@ export const routes = [
     },
   },
   {
-    path: '/member',
-    name: 'member',
-    component: () => import('~/pages/member/index.vue'),
+    path: '/cart',
+    name: 'cart',
+    component: () => import('~/pages/cart/index.vue'),
     meta: {
-      title: 'Member Page',
+      title: 'Cart Page',
     },
   },
   {

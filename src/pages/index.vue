@@ -8,10 +8,24 @@ defineOptions({
   <div class="text-center">
     <div class="mx-auto flex max-w-48 flex-col gap-y-4">
       <RouterLink
-        to="/cart"
+        to="/demo"
         class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
       >
-        Go to cart
+        Go to demo
+      </RouterLink>
+
+      <RouterLink
+        to="/posts"
+        class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
+      >
+        Go to posts
+      </RouterLink>
+
+      <RouterLink
+        to="/member"
+        class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
+      >
+        Go to member
       </RouterLink>
 
       <RouterLink
@@ -36,17 +50,10 @@ defineOptions({
       </RouterLink>
 
       <RouterLink
-        to="/member"
+        to="/cart"
         class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
       >
-        Go to member
-      </RouterLink>
-
-      <RouterLink
-        to="/posts"
-        class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
-      >
-        Go to posts
+        Go to cart
       </RouterLink>
     </div>
   </div>

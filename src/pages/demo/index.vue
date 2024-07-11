@@ -2,7 +2,7 @@
 
 <template>
   <div>
-    Demo Page
+    Demo Content
   </div>
 </template>
 
