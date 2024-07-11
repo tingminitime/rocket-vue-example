@@ -43,7 +43,7 @@ export default {
     require('@tailwindcss/aspect-ratio'),
     require('@tailwindcss/container-queries'),
     iconsPlugin({
-      collections: getIconCollections(['carbon']),
+      collections: getIconCollections(['carbon', 'eos-icons']),
     }),
   ],
 }

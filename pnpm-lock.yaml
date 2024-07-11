@@ -30,6 +30,9 @@ importers:
       '@iconify-json/carbon':
         specifier: ^1.1.36
         version: 1.1.36
+      '@iconify-json/eos-icons':
+        specifier: ^1.1.10
+        version: 1.1.10
       '@tailwindcss/aspect-ratio':
         specifier: ^0.4.2
         version: 0.4.2(tailwindcss@3.4.4)
@@ -516,6 +519,9 @@ packages:
 
   '@iconify-json/carbon@1.1.36':
     resolution: {integrity: sha512-NC3VcqLtwLZpi7+LeXj+99/byv+asrnCQxiDNCZV6hKr9WcNh6C25kJguJYfN+dV54kOkw78e+6PitQi2Bppnw==}
+
+  '@iconify-json/eos-icons@1.1.10':
+    resolution: {integrity: sha512-sLkaMSrzHgATDFpVYs3/ymeNxR8CtkZCh1Ds9fYxjfhNmXArofbWhHwANqM4Sw9XNbMJq/Z5yxJ5BPTYqjhRcA==}
 
   '@iconify/types@2.0.0':
     resolution: {integrity: sha512-+wluvCrRhXrhyOmRDJ3q8mux9JkKy5SJ/v8ol2tu4FVjyYvtEzkc/3pK15ET6RKg4b4w4BmTk1+gsCUhf21Ykg==}
@@ -3378,6 +3384,10 @@ snapshots:
   '@humanwhocodes/object-schema@2.0.3': {}
 
   '@iconify-json/carbon@1.1.36':
+    dependencies:
+      '@iconify/types': 2.0.0
+
+  '@iconify-json/eos-icons@1.1.10':
     dependencies:
       '@iconify/types': 2.0.0
 

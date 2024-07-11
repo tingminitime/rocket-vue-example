@@ -8,12 +8,14 @@ export {}
 declare module 'vue' {
   export interface GlobalComponents {
     Link: typeof import('./src/components/Link.vue')['default']
+    MemberCard: typeof import('./src/components/member/MemberCard.vue')['default']
+    PageTitle: typeof import('./src/components/PageTitle.vue')['default']
+    PostCard: typeof import('./src/components/post/PostCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    TheCounter: typeof import('./src/components/TheCounter.vue')['default']
     TheFooter: typeof import('./src/components/TheFooter.vue')['default']
-    TheInput: typeof import('./src/components/TheInput.vue')['default']
-    TheLogos: typeof import('./src/components/TheLogos.vue')['default']
     ThemeSwitcher: typeof import('./src/components/ThemeSwitcher.vue')['default']
+    TodoItem: typeof import('./src/components/todos/TodoItem.vue')['default']
+    TodoList: typeof import('./src/components/todos/TodoList.vue')['default']
   }
 }

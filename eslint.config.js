@@ -24,6 +24,7 @@ export default antfu(
         'unused-imports/no-unused-vars': 'warn',
         'unused-imports/no-unused-imports': 'warn',
         'no-unused-vars': 'warn',
+        'no-console': 'warn',
       },
     },
     ignores: [
