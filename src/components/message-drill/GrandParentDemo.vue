@@ -1,6 +1,12 @@
-<!-- TODO: 將 `message` 狀態與子元件 input 雙向綁定 -->
 <script setup lang="ts">
 const message = ref('來自祖父元件的訊息')
+
+// function updateMessage(newMessage: string) {
+//   message.value = newMessage
+// }
+
+// provide('message', message)
+// provide('updateMessage', updateMessage)
 </script>
 
 <template>
@@ -11,7 +17,8 @@ const message = ref('來自祖父元件的訊息')
       type="text"
       class="mt-2 w-full rounded border-2 border-gray-400 px-2 py-1 text-gray-900"
     >
-    <Parent />
+    <ParentDemo v-model="message" />
+    <!-- <Parent v-model="message" /> -->
   </div>
 </template>
 

@@ -7,13 +7,20 @@ export {}
 /* prettier-ignore */
 declare module 'vue' {
   export interface GlobalComponents {
+    _Child: typeof import('./src/components/message-drill/_Child.vue')['default']
+    _GrandParent: typeof import('./src/components/message-drill/_GrandParent.vue')['default']
+    _Parent: typeof import('./src/components/message-drill/_Parent.vue')['default']
     Child: typeof import('./src/components/message-drill/Child.vue')['default']
+    ChildDemo: typeof import('./src/components/message-drill/ChildDemo.vue')['default']
+    copy: typeof import('./src/components/message-drill/Parent copy.vue')['default']
     DemoComponent: typeof import('./src/components/demo/DemoComponent.vue')['default']
     GrandParent: typeof import('./src/components/message-drill/GrandParent.vue')['default']
+    GrandParentDemo: typeof import('./src/components/message-drill/GrandParentDemo.vue')['default']
     Link: typeof import('./src/components/Link.vue')['default']
     MemberCard: typeof import('./src/components/member/MemberCard.vue')['default']
     PageTitle: typeof import('./src/components/PageTitle.vue')['default']
     Parent: typeof import('./src/components/message-drill/Parent.vue')['default']
+    ParentDemo: typeof import('./src/components/message-drill/ParentDemo.vue')['default']
     PostCard: typeof import('./src/components/post/PostCard.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']

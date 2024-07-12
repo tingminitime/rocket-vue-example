@@ -64,6 +64,15 @@ export const routes = [
     },
   },
   {
+    path: '/message-drill-demo',
+    name: 'message-drill-demo',
+    component: () => import('~/pages/message/demo.vue'),
+    meta: {
+      title: 'Drill Message Page',
+      description: 'Component v-model & provide/inject',
+    },
+  },
+  {
     path: '/todos',
     name: 'todos',
     component: () => import('~/pages/todos/index.vue'),
