@@ -1,5 +1,3 @@
-<!-- TODO 1. 使用 store 持久化 todo list 狀態 -->
-
 <!-- JS -->
 <!-- <script setup>
 const todos = ref([
@@ -11,7 +9,13 @@ const todos = ref([
 
 <!-- TS -->
 <script setup lang="ts">
-const todoDemoStore = useTodoDemoStore()
+import type { Todo } from '~/types/api/todo'
+
+const todos = ref<Todo[]>([
+  { id: '1', title: 'Learn Vue 3', completed: true },
+  { id: '2', title: 'Learn Vite', completed: true },
+  { id: '3', title: 'Build something awesome', completed: false },
+])
 </script>
 
 <template>
@@ -20,27 +24,18 @@ const todoDemoStore = useTodoDemoStore()
       type="text"
       placeholder="Press Enter to add a new todo"
       class="w-full rounded border px-4 py-2 placeholder:text-gray-300 dark:bg-gray-600"
-      @keydown.enter="todoDemoStore.addTodo(($event.target as HTMLInputElement).value)"
     >
   </div>
 
   <button
     type="button"
     class="my-btn mb-4 ml-auto"
-    @click="todoDemoStore.$reset"
   >
     Reset
   </button>
 
   <ul class="space-y-2">
-    <TodoItemDemo
-      v-for="todo in todoDemoStore.todos"
-      :id="todo.id"
-      :key="todo.id"
-      v-model:checked="todo.completed"
-      :title="todo.title"
-      @delete-todo="todoDemoStore.deleteTodoById"
-    />
+    <TodoItem />
   </ul>
 </template>
 

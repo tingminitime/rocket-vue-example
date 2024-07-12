@@ -53,7 +53,7 @@ defineOptions({
         to="/message-drill-demo"
         class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
       >
-        Go to message<br>( demo )
+        Go to message<br>( Demo )
       </RouterLink>
 
       <RouterLink
@@ -61,6 +61,13 @@ defineOptions({
         class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
       >
         Go to todos
+      </RouterLink>
+
+      <RouterLink
+        to="/todos-demo"
+        class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
+      >
+        Go to todos<br>( Demo )
       </RouterLink>
 
       <RouterLink

@@ -69,7 +69,7 @@ export const routes = [
     component: () => import('~/pages/message/demo.vue'),
     meta: {
       title: 'Drill Message Page',
-      description: 'Component v-model & provide/inject',
+      description: '( Demo ) Component v-model & provide/inject',
     },
   },
   {
@@ -79,6 +79,15 @@ export const routes = [
     meta: {
       title: 'Todos Page',
       description: 'Store',
+    },
+  },
+  {
+    path: '/todos-demo',
+    name: 'todos-demo',
+    component: () => import('~/pages/todos/demo.vue'),
+    meta: {
+      title: 'Todos Page',
+      description: '( Demo ) Store',
     },
   },
   {

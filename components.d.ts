@@ -12,7 +12,7 @@ declare module 'vue' {
     _Parent: typeof import('./src/components/message-drill/_Parent.vue')['default']
     Child: typeof import('./src/components/message-drill/Child.vue')['default']
     ChildDemo: typeof import('./src/components/message-drill/ChildDemo.vue')['default']
-    copy: typeof import('./src/components/message-drill/Parent copy.vue')['default']
+    copy: typeof import('./src/components/todos/TodoListDemo copy.vue')['default']
     DemoComponent: typeof import('./src/components/demo/DemoComponent.vue')['default']
     GrandParent: typeof import('./src/components/message-drill/GrandParent.vue')['default']
     GrandParentDemo: typeof import('./src/components/message-drill/GrandParentDemo.vue')['default']
