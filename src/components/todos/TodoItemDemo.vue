@@ -33,12 +33,17 @@ defineProps<Omit<Todo, 'completed'>>()
 
 const emit = defineEmits<{
   'update:checked': [value: boolean]
+  'deleteTodo': [id: string]
 }>()
 
 const checked = defineModel<boolean>('checked')
 
 function updateChecked(event: Event) {
   emit('update:checked', (event.target as HTMLInputElement).checked)
+}
+
+function deleteTodoById(id: string) {
+  emit('deleteTodo', id)
 }
 </script>
 
@@ -59,7 +64,7 @@ function updateChecked(event: Event) {
 
     <button
       class="absolute -right-14 top-1/2 block -translate-y-1/2 rounded-lg bg-white p-4 opacity-0 transition-opacity duration-200 ease-in-out hover:bg-red-400 group-hover:opacity-100 dark:bg-gray-600 dark:hover:bg-red-500"
-      @click="() => console.log('Delete todo')"
+      @click="deleteTodoById(id)"
     >
       <span class="i-carbon-trash-can"></span>
     </button>

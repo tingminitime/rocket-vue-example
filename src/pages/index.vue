@@ -43,6 +43,13 @@ defineOptions({
       </RouterLink>
 
       <RouterLink
+        to="/message-drill"
+        class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
+      >
+        Go to message
+      </RouterLink>
+
+      <RouterLink
         to="/todos"
         class="rounded bg-gray-100 px-2 py-1 text-gray-900 hover:bg-gray-200"
       >
